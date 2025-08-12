@@ -1,5 +1,68 @@
-# Local app manifest (keep private)
-Arch-emoji-picker.sh
-Arch-gen-emoji-table.sh
-Arch-install.sh
-Arch-restore.sh
+# ========================================
+# Arch-Forge .gitignore
+# Organized by category for clarity
+# ========================================
+
+# -------------------------
+# OS-generated files
+# -------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# -------------------------
+# Editor/IDE settings
+# -------------------------
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# -------------------------
+# Logs & cache
+# -------------------------
+*.log
+*.log.*
+*.tmp
+*.temp
+*.bak
+.cache/
+__pycache__/
+*.pyc
+*.pyo
+
+# -------------------------
+# Build/output directories
+# -------------------------
+dist/
+build/
+out/
+*.tar
+*.tar.gz
+*.zip
+
+# -------------------------
+# System/package manager caches
+# -------------------------
+node_modules/
+*.pkg.tar.zst
+*.deb
+*.rpm
+*.apk
+
+# -------------------------
+# Project-specific ignores
+# -------------------------
+# Private Arch scripts (never commit)
+Arch_ver/
+
+# Local testing and scratch files
+scratch/
+test/
+tmp/
+local-only/
+
+# Local configs not meant for Git
+*.local
+*.secret
+config.local.*
